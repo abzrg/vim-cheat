@@ -97,7 +97,7 @@ let s:utils = [
             \ 'xinit', 'startx',
             \ 'git',
             \]
-" g:cheat#list is a custom list provided by the user
+" g:cheat#languages/utils are custom lists provided by the user
 let s:list = g:cheat#languages + g:cheat#utils + s:languages + s:utils
 " Remove any duplicates (source: https://stackoverflow.com/a/6630950/13041067)
 let s:unduplist=filter(copy(s:list), 'index(s:list, v:val, v:key+1)==-1')

@@ -22,7 +22,7 @@ nnoremap <leader>c :Cheat<CR>
 
 It prompts you twice, first for providing a language/utility, and then for
 entering an optional search query (skip it with either `<Return>` or `<Esc>`).
-It do its best to add syntax highlighting to the cheat sheets. When done press
+It does its best to add syntax highlighting to the cheat sheets. When done press
 `q` to quit the tab. For the first prompt, you can auto-complete with `<Tab>`.
 If your language/utility is not appeared in the auto-complete, assign
 `g:cheat#languages` and/or `g:cheat#utils` to a custom list. For example:
