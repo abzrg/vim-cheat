@@ -9,18 +9,12 @@ let g:loaded_cheat = 1
 
 " If you cannot find your specific language/utilities in the autocomplete, add
 " them in this array
-let g:cheat#languages = [
-            \ 'c',
-            \ 'cpp',
-            \ 'lua',
-            \ ]
-let g:cheat#utils = [
-            \ 'git'
-            \]
+let g:cheat#languages = []
+let g:cheat#utils = []
 
 " A command wrapper for the main function
 command! Cheat :call cheat#cheat()
 
 " Choose a binding for this plugin
-nnoremap ;i :call cheat#cheat()<CR>
+nnoremap <unique> <leader>c :call cheat#cheat()<CR>
 
