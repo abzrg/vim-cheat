@@ -1,0 +1,32 @@
+*cheat.txt*  Grabs cheatsheet from <https://cht.sh>
+
+Author:  Ali Bozorgzadeh <https://github.com/reverseila>
+License: Same terms as Vim itself (see |license|)
+
+                              +-+-+-+-+-+
+                              |c h e a t|
+                              +-+-+-+-+-+
+
+Query for languages/utilities. It first prompts you to give it a
+language/utility; then the second prompt asks you to provide a keyword/pattern
+query string. You can omit the second one by just hitting Enter. It will create
+a read-only tab and |put|s output of the curl command into that buffer. So, curl
+is the only dependency for this plugin.
+
+In the first prompt you can type entire/portion of language/utility and
+autocomplete your target by pressing <Tab> key.
+
+If your language/utility is not appeared in the autocomplete, Assign
+g:cheat#list to a custom list that contains all the languages/utilities you
+might lookup.
+
+As This plugin is not in use all the time, it only loads when a mapping or
+command is executed.
+
+To use this plugin you can either:
+1. Execute the Ex command >
+    :Cheat
+2. or, Use a mapping (default: ;i unless this binding is set before) >
+    nnoremap ;i :Cheat<CR>
+
+ vim:tw=78:et:ft=help:norl:
