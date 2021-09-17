@@ -9,12 +9,14 @@ let g:loaded_cheat = 1
 
 " If you cannot find your specific language/utilities in the autocomplete, add
 " them in this array
-let g:cheat#list = [
+let g:cheat#languages = [
             \ 'c',
             \ 'cpp',
             \ 'lua',
-            \ 'patch'
             \ ]
+let g:cheat#utils = [
+            \ 'git'
+            \]
 
 " A command wrapper for the main function
 command! Cheat :call cheat#cheat()
