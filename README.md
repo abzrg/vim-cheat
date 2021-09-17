@@ -2,6 +2,8 @@
 
 Downloads cheat sheets from https://cht.sh and display them in a tab.
 
+![Preview](https://i.ibb.co/JFDD8vg/out.gif)
+
 ## How to use
 
 You can either issue a command or use a mapping,
